@@ -1,4 +1,3 @@
-<!-- Put this in the HTML section in JSFiddle! -->
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 
 <div id="app">
@@ -8,6 +7,15 @@
 	<p>{{ title }}</p>
 	<p>{{ sayHello() }} - <a v-bind:href="link">Google</a></p>
 	<p v-html="finishedLink"></p>
-	<button v-on:click="increase">Click Me</button>
+	<button v-on:click="increase(2, $event)">Click Me</button>
 	<p>{{ counter }}</p>
+	<p v-on:mousemove="updateCoordinates">
+		Coordinates: {{ x }} / {{ y }}
+    - <span v-on:mousemove="dummy">DEAD SPOT</span>
+	</p>
+  <p v-on:mousemove="updateCoordinates">
+		Coordinates: {{ x }} / {{ y }}
+    - <span v-on:mousemove.stop="">DEAD SPOT</span>
+	</p>
+  <input type="text" v-on:keyup.enter="alertMe">
 </div>
