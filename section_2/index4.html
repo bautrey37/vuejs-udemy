@@ -1,0 +1,9 @@
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
+<div id="app4">
+	<div class="demo" @click="attachRed = !attachRed" :class="divClasses"></div>
+	<div class="demo" :class="{red: attachRed}"></div>
+	<div class="demo" :class="[color, {red: attachRed}]"></div>
+	<hr />
+	<input type="text" v-model="color" />
+</div>
