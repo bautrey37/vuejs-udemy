@@ -8,7 +8,8 @@
 	<p>{{ sayHello() }} - <a v-bind:href="link">Google</a></p>
 	<p v-html="finishedLink"></p>
 	<button v-on:click="increase(2, $event)">Click Me</button>
-	<p>{{ counter }}</p>
+  <button v-on:click="counter++">Click Me</button>
+	<p>{{ counter * 2 > 20 ? 'Greater than 20' : 'Smaller than 20' }}</p>
 	<p v-on:mousemove="updateCoordinates">
 		Coordinates: {{ x }} / {{ y }}
     - <span v-on:mousemove="dummy">DEAD SPOT</span>

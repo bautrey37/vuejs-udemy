@@ -7,8 +7,5 @@ new Vue({
 		alertMe: function () {
 			alert('ALERT');
 		},
-		recordValue: function (event) {
-			this.value = event.target.value;
-		},
 	},
 });
