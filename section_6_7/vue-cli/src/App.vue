@@ -1,12 +1,7 @@
 <template>
-  <div id="app">
-    <h1>Hello World</h1>
-  </div>
+  <app-servers></app-servers>
 </template>
 
-<script>
-export default {};
-</script>
+<script></script>
 
-<style>
-</style>
+<style></style>
