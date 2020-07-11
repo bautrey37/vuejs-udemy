@@ -1,25 +1,22 @@
 <template>
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <header>
-          <h1>Server Status</h1>
-        </header>
-      </div>
-    </div>
+    <app-header></app-header>
     <hr />
     <app-servers></app-servers>
     <hr />
-    <div class="row">
-      <div class="col-xs-12">
-        <footer>
-          <p>All Servers are managed here</p>
-        </footer>
-      </div>
-    </div>
+    <app-footer></app-footer>
   </div>
 </template>
 
-<script></script>
+<script>
+import Header from './Header.vue';
+import Footer from './Footer.vue';
+export default {
+  components: {
+    'app-header': Header,
+    'app-footer': Footer,
+  },
+};
+</script>
 
 <style></style>
