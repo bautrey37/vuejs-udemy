@@ -1,6 +1,9 @@
 <template>
   <div>
-    <app-server-status v-for="server in 5"></app-server-status>
+    <app-server-status
+      v-for="server in 5"
+      v-bind:key="server"
+    ></app-server-status>
   </div>
 </template>
 
