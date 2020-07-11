@@ -21,9 +21,13 @@ import ServerStatus from './ServerStatus.vue';
 export default {
   components: {
     'app-server-index': ServerIndex,
-    'app-server-status': ServerStatus,
-  },
+    'app-server-status': ServerStatus
+  }
 };
 </script>
 
-<style></style>
+<style scoped>
+div {
+  border: 1px solid blue;
+}
+</style>
