@@ -1,9 +1,17 @@
 <template>
-  <h1>Hello World</h1>
+  <app-quote>
+    <h2>The Quote</h2>
+    <p>A wonderful quote</p>
+  </app-quote>
 </template>
 
 <script>
-export default {};
+import Quote from './components/Quote.vue';
+export default {
+  components: {
+    appQuote: Quote
+  }
+};
 </script>
 
 <style>
