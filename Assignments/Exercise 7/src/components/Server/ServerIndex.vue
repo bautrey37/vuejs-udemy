@@ -3,6 +3,8 @@
 </template>
 
 <script>
+import { eventBus } from '../../main';
+
 export default {
   props: {
     index: {
@@ -13,6 +15,11 @@ export default {
       type: String,
       required: true,
     },
+  },
+  created() {
+    eventBus.$on('resetStatus', (status) => {
+      this.status = status;
+    });
   },
 };
 </script>
