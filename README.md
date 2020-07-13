@@ -8,6 +8,10 @@ https://www.udemy.com/course/vuejs-2-the-complete-guide/
 
 Covers sections 1 - 3
 
+### Wonderful Quotes
+
+Covers sections 5 - 9
+
 ## Sections
 
 ### Section 1: Getting Started
