@@ -1,25 +1,20 @@
 <template>
-  <p>Server #{{ index }} - Status: {{ status }}</p>
+  <li class="list-group-item" style="cursor: pointer;" @click="serverSelected">
+    <p>Server #{{ server.id }} - Status: {{ server.status }}</p>
+  </li>
 </template>
 
 <script>
-import { eventBus } from '../../main';
+import { serverBus } from '../../main';
 
 export default {
   props: {
-    index: {
-      type: Number,
-      required: true,
-    },
-    status: {
-      type: String,
-      required: true,
-    },
+    server: Object,
   },
-  created() {
-    eventBus.$on('resetStatus', (status) => {
-      this.status = status;
-    });
+  methods: {
+    serverSelected() {
+      serverBus.$emit('serverSelected', this.server);
+    },
   },
 };
 </script>

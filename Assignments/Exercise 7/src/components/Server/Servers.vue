@@ -1,9 +1,11 @@
 <template>
   <div class="col-xs-12 col-sm-6">
     <ul class="list-group">
-      <li class="list-group-item" v-for="server in servers" :key="server">
-        <server-index :index="server.id" :status="server.status"></server-index>
-      </li>
+      <server-index
+        v-for="server in servers"
+        :key="server"
+        :server="server"
+      ></server-index>
     </ul>
   </div>
 </template>
