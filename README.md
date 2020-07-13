@@ -2,16 +2,32 @@
 
 https://www.udemy.com/course/vuejs-2-the-complete-guide/
 
-## Section 2
+## Projects
 
-Copy to JSFiddle
+### Monster Brawler
 
-## Section 7: Introduction to Components
+Covers sections 1 - 3
 
-## Section 8: Communicating between Components
+## Sections
+
+### Section 1: Getting Started
+
+### Section 2: Using VueJS to Interact with DOM
+
+Copy code to JSFiddle to run
+
+### Section 3: Conditionals and Rendering Lists
+
+### Section 5: Understanding VueJS Instance
+
+### Section 6: Moving to real development Worflow with `vue-cli`
+
+### Section 7: Introduction to Components
+
+### Section 8: Communicating between Components
 
 props, validating, callback, child => parent communication, child => child communication
 
-## Section 9: Advanced Component Usage
+### Section 9: Advanced Component Usage
 
 Slots and Dynamic Components
