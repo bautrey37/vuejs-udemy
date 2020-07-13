@@ -3,18 +3,27 @@
     <div class="row">
       <div class="col-xs-12">
         <br />
-        <button class="btn btn-primary" @click="changeComponent('appBlue')">
+        <button
+          class="btn btn-primary"
+          @click="changeComponent('appBlue', 'blue content')"
+        >
           Load Blue Template
         </button>
-        <button class="btn btn-success" @click="changeComponent('appGreen')">
+        <button
+          class="btn btn-success"
+          @click="changeComponent('appGreen', 'green content')"
+        >
           Load Green Template
         </button>
-        <button class="btn btn-danger" @click="changeComponent('appRed')">
+        <button
+          class="btn btn-danger"
+          @click="changeComponent('appRed', 'red content')"
+        >
           Load Red Template
         </button>
         <hr />
         <component :is="selectedComponent">
-          <p slot="content">Content</p>
+          <p slot="content">{{ content }}</p>
         </component>
         <!-- <app-blue></app-blue>
         <app-green></app-green>
@@ -33,6 +42,7 @@ export default {
   data: function () {
     return {
       selectedComponent: null,
+      content: null,
     };
   },
   components: {
@@ -41,8 +51,9 @@ export default {
     appRed: Red,
   },
   methods: {
-    changeComponent(name) {
+    changeComponent(name, content) {
       this.selectedComponent = name;
+      this.content = content;
       console.log(name);
     },
   },
