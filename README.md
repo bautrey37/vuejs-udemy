@@ -8,9 +8,13 @@ https://www.udemy.com/course/vuejs-2-the-complete-guide/
 
 Covers sections 1 - 3
 
+![monster](Projects/docs/monster_brawler.png)
+
 ### Wonderful Quotes
 
 Covers sections 5 - 9
+
+![quotes](Projects/docs/wonderful_quotes.png)
 
 ## Sections
 
