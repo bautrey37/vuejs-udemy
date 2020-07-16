@@ -45,3 +45,5 @@ Slots and Dynamic Components
 v-model, input & select tags, forms
 
 ### Section 12: Understanding Directives
+
+global and local custom directives
