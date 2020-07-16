@@ -42,4 +42,4 @@ Slots and Dynamic Components
 
 ### Section 11: Handling User Input with Forms
 
-v-model, <input>
+v-model, <input>, forms, <select>
