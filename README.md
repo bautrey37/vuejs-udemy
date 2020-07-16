@@ -39,3 +39,7 @@ props, validating, callback, child => parent communication, child => child commu
 ### Section 9: Advanced Component Usage
 
 Slots and Dynamic Components
+
+### Section 11: Handling User Input with Forms
+
+v-model, <input>
