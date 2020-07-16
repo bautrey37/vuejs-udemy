@@ -43,3 +43,5 @@ Slots and Dynamic Components
 ### Section 11: Handling User Input with Forms
 
 v-model, input & select tags, forms
+
+### Section 12: Understanding Directives
