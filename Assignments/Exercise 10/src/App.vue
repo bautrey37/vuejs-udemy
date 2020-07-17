@@ -5,7 +5,15 @@
         <h1>Directives Exercise</h1>
         <!-- Exercise -->
         <!-- Build a Custom Directive which works like v-on (Listen for Events) -->
-        <button v-myon:click="testFn">Test Button</button>
+        <button v-customOn:click="clicked" class="btn btn-primary">
+          Click Me
+        </button>
+        <hr />
+        <div
+          style="width: 100px; height: 100px; background-color: lightgreen;"
+          v-customOn:mouseenter="mouseEnter"
+          v-customOn:mouseleave="mouseLeave"
+        ></div>
       </div>
     </div>
   </div>
@@ -14,13 +22,26 @@
 <script>
 export default {
   directives: {
-    myon: {
-      bind(el, binding, vnode) {},
+    customOn: {
+      bind(el, binding) {
+        //                    el.onclick = function() {
+        //                        binding.value();
+        //                    }
+        const type = binding.arg;
+        const fn = binding.value;
+        el.addEventListener(type, fn);
+      },
     },
   },
   methods: {
-    testFn() {
-      alert('FUNCTION IS CALLED');
+    clicked() {
+      alert('I was clicked!');
+    },
+    mouseEnter() {
+      console.log('Mouse entered!');
+    },
+    mouseLeave() {
+      console.log('Mouse leaved!');
     },
   },
 };
