@@ -47,3 +47,5 @@ v-model, input & select tags, forms
 ### Section 12: Understanding Directives
 
 global and local custom directives
+
+### Section 13: Filters and Mixins
