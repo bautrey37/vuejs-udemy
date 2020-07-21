@@ -91,3 +91,7 @@ Custom Directives: https://vuejs.org/v2/guide/custom-directive.html
 Filters: https://vuejs.org/v2/guide/filters.html
 
 Mixins: https://vuejs.org/v2/guide/mixins.html
+
+### Section 22: Using Axios
+
+Axios: https://github.com/axios/axios
