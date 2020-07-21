@@ -16,6 +16,8 @@
 
         <!-- Exercise 3 -->
         <!-- Do the same as in Exercises 1 & 2, now with Computed Properties -->
+        <p>{{ reserveString }}</p>
+        <p>{{ appendCount }}</p>
 
         <!-- Exercise 4 -->
         <!-- Share the Computed Property rebuilding Exercise 2 via a Mixin -->
@@ -41,6 +43,17 @@ export default {
     },
     count(value) {
       return `${value} (${value.length})`;
+    }
+  },
+  computed: {
+    reserveString() {
+      return this.ex1
+        .split('')
+        .reverse()
+        .join('');
+    },
+    appendCount() {
+      return `${this.ex2} (${this.ex2.length})`;
     }
   }
 };
