@@ -27,7 +27,10 @@
 </template>
 
 <script>
+import { mixin } from './Mixin';
+
 export default {
+  mixins: [mixin],
   data() {
     return {
       ex1: 'test',
@@ -44,18 +47,18 @@ export default {
     count(value) {
       return `${value} (${value.length})`;
     }
-  },
-  computed: {
-    reserveString() {
-      return this.ex1
-        .split('')
-        .reverse()
-        .join('');
-    },
-    appendCount() {
-      return `${this.ex2} (${this.ex2.length})`;
-    }
   }
+  // computed: {
+  //   reserveString() {
+  //     return this.ex1
+  //       .split('')
+  //       .reverse()
+  //       .join('');
+  //   },
+  //   appendCount() {
+  //     return `${this.ex2} (${this.ex2.length})`;
+  //   }
+  // }
 };
 </script>
 
