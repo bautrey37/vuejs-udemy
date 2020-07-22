@@ -6,11 +6,12 @@
 </template>
 
 <style scoped>
-  h1, p {
-    text-align: center;
-  }
+h1,
+p {
+  text-align: center;
+}
 
-  p {
-    color: red;
-  }
+p {
+  color: red;
+}
 </style>
