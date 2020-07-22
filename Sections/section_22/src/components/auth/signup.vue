@@ -101,11 +101,9 @@ export default {
         terms: this.terms,
       };
       console.log(formData);
-      axios
-        .post('https://vue-practice-4455d.firebaseio.com/users.json', formData)
-        .then((res) => {
-          console.log(res);
-        });
+      axios.post('/users.json', formData).then((res) => {
+        console.log(res);
+      });
     },
   },
 };
