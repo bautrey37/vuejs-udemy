@@ -92,6 +92,8 @@ Filters: https://vuejs.org/v2/guide/filters.html
 
 Mixins: https://vuejs.org/v2/guide/mixins.html
 
+### Section 14: Animations
+
 ### Section 22: Using Axios
 
 Axios: https://github.com/axios/axios
