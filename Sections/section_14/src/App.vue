@@ -43,8 +43,9 @@
           @leave="leave"
           @after-leave="afterLeave"
           @after-cancelled="leaveCancelled"
+          :css="false"
         >
-          <div style="width: 100px; height: 100px; background-color: lightgreen" v-if="load"></div>
+          <div style="width: 300px; height: 100px; background-color: lightgreen" v-if="load"></div>
         </transition>
       </div>
     </div>
@@ -58,15 +59,26 @@ export default {
       show: true,
       load: true,
       alertAnimation: 'fade',
+      elementWidth: 100,
     };
   },
   methods: {
     beforeEnter(el) {
       console.log('beforeEnter');
+      this.elementWidth = 100;
+      el.style.width = this.elementWidth + 'px';
     },
     enter(el, done) {
       console.log('enter');
-      done();
+      let round = 1;
+      const interval = setInterval(() => {
+        el.style.width = this.elementWidth + round * 10 + 'px';
+        round++;
+        if (round > 20) {
+          clearInterval(interval);
+          done();
+        }
+      }, 20);
     },
     afterEnter(el) {
       console.log('afterEnter');
@@ -76,10 +88,20 @@ export default {
     },
     beforeLeave(el) {
       console.log('beforeLeave');
+      this.elementWidth = 300;
+      el.style.width = this.elementWidth + 'px';
     },
     leave(el, done) {
       console.log('leave');
-      done();
+      let round = 1;
+      const interval = setInterval(() => {
+        el.style.width = this.elementWidth - round * 10 + 'px';
+        round++;
+        if (round > 20) {
+          clearInterval(interval);
+          done();
+        }
+      }, 20);
     },
     afterLeave(el) {
       console.log('afterLeave');
