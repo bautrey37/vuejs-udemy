@@ -4,7 +4,7 @@
     <p>User loaded has ID: {{ $route.params.id }}</p>
     <router-link
       tag="button"
-      :to="'/user/' + $route.params.id + '/edit'"
+      :to="{ name: 'UserEdit', params: { id: $route.params.id } }"
       class="btn btn-primary"
     >
       Edit User
