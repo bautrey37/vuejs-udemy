@@ -100,6 +100,10 @@ Animate CSS: https://animate.style/
 
 ### Section 16: Routing
 
+vue-router Github Page: https://github.com/vuejs/vue-router
+
+vue-router Documentation: https://router.vuejs.org/en/
+
 ### Section 22: Using Axios
 
 Axios: https://github.com/axios/axios
