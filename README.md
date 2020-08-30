@@ -10,6 +10,8 @@ Covers sections 1 - 3
 
 ![monster](Projects/docs/monster_brawler.png)
 
+TODO - update with animations
+
 ### Wonderful Quotes
 
 Covers sections 5 - 9
@@ -95,6 +97,8 @@ Mixins: https://vuejs.org/v2/guide/mixins.html
 ### Section 14: Animations
 
 Animate CSS: https://animate.style/
+
+### Section 16: Routing
 
 ### Section 22: Using Axios
 
