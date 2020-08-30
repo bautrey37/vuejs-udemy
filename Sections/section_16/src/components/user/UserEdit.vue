@@ -1,3 +1,7 @@
 <template>
-  <h3>Edit the User</h3>
+  <div>
+    <h3>Some User Details</h3>
+    <p>Locale: {{ $route.query.locale }}</p>
+    <p>Analytics: {{ $route.query.q }}</p>
+  </div>
 </template>
