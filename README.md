@@ -18,6 +18,8 @@ Covers sections 5 - 9
 
 ![quotes](Projects/docs/wonderful_quotes.png)
 
+### Stock Trader
+
 ## Sections
 
 ### Section 1: Getting Started
