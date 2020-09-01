@@ -100,6 +100,18 @@ Mixins: https://vuejs.org/v2/guide/mixins.html
 
 Animate CSS: https://animate.style/
 
+### Section 15: vue-resource
+
+vue-resource on Github: https://github.com/yyx990803/vue-resource
+
+Some Code Recipes for vue-resource: https://github.com/yyx990803/vue-resource/blob/master/docs/recipes.md
+
+Template URLs: https://medialize.github.io/URI.js/uri-template.html
+
+Requests and Responses (incl. Different File Formats): https://github.com/yyx990803/vue-resource/blob/master/docs/http.md
+
+Axios is really recommended instead of using this vue-resource.
+
 ### Section 16: Routing
 
 vue-router Github Page: https://github.com/vuejs/vue-router
