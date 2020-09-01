@@ -19,3 +19,6 @@ export const store = new Vuex.Store({
     counter,
   },
 });
+
+// https://github.com/vuejs/vuex/releases/tag/v2.1.0
+// new `namespaced: true` option for modules
