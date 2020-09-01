@@ -106,7 +106,9 @@ vue-router Documentation: https://router.vuejs.org/en/
 
 ### Section 17: Vuex
 
+Vuex Github Page: https://github.com/vuejs/vuex
 
+Vuex Documenation: https://vuex.vuejs.org/en/
 
 ### Section 22: Using Axios
 
