@@ -1,7 +1,11 @@
 <template>
   <div id="app">
     <app-header></app-header>
-    <router-view />
+    <div class="row">
+      <div class="col-md-12">
+        <router-view />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -22,5 +26,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+body {
+  padding: 30px;
 }
 </style>
