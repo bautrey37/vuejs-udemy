@@ -5,11 +5,21 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <router-link to="/portfolio" class="nav-item" activeClass="active" tag="li">
+          <router-link
+            to="/portfolio"
+            class="nav-item"
+            activeClass="active"
+            tag="li"
+          >
             <a class="nav-link">Portfolio</a>
           </router-link>
           <!-- active highlighting not working? -->
-          <router-link to="/stocks" class="nav-item active" activeClass="active" tag="li">
+          <router-link
+            to="/stocks"
+            class="nav-item active"
+            activeClass="active"
+            tag="li"
+          >
             <a class="nav-link">Stocks</a>
           </router-link>
         </ul>
@@ -27,7 +37,8 @@
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-            >Save & Load</a>
+              >Save & Load</a
+            >
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Save Data</a>
               <a class="dropdown-item" href="#">Load Data</a>

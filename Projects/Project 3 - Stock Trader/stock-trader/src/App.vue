@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="container">
     <app-header></app-header>
     <div class="row">
       <div class="col-md-12">
@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style>
-#app {
+#container {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
