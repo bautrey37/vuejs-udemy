@@ -15,19 +15,14 @@ import Header from './views/Header.vue';
 export default {
   components: {
     appHeader: Header
+  },
+  created() {
+    this.$store.dispatch('initStocks');
   }
 };
 </script>
 
 <style>
-#container {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
 body {
   padding: 30px;
 }
