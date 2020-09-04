@@ -8,16 +8,15 @@
           <router-link
             to="/portfolio"
             class="nav-item"
-            activeClass="active"
+            active-class="active"
             tag="li"
           >
             <a class="nav-link">Portfolio</a>
           </router-link>
-          <!-- active highlighting not working? -->
           <router-link
             to="/stocks"
-            class="nav-item active"
-            activeClass="active"
+            class="nav-item"
+            active-class="active"
             tag="li"
           >
             <a class="nav-link">Stocks</a>
@@ -27,7 +26,6 @@
           <li class="nav-item">
             <a class="nav-link" href="#">End Day</a>
           </li>
-          <!-- Not working -->
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
