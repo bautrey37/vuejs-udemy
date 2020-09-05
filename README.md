@@ -28,7 +28,7 @@ Use Vue Developer Tools: https://github.com/vuejs/vue-devtools for better debugg
 
 ![portfolio](Projects/docs/stock_trader_portfolio.png)
 
-Deployed at: hhttps://stock-trader-brandon.surge.sh/
+Deployed at: https://stock-trader-brandon.surge.sh/
 
 ## Sections
 
