@@ -25,7 +25,7 @@
 
         <ul class="nav navbar-nav navbar-right">
           <li class="nav-item">
-            <a class="nav-link" href="#">End Day</a>
+            <a class="nav-link" href="#" @click="endDay">End Day</a>
           </li>
 
           <li class="nav-item dropdown">
@@ -54,10 +54,18 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+
 export default {
   computed: {
     funds() {
       return this.$store.getters.funds;
+    }
+  },
+  methods: {
+    ...mapActions(['randomizeStocks']),
+    endDay() {
+      this.randomizeStocks();
     }
   }
 };
