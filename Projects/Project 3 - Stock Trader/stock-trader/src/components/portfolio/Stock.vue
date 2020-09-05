@@ -5,7 +5,8 @@
         <h3 class="card-title">
           {{ stock.name }}
           <small>
-            (Price: {{ stock.price }} | Quantity: {{ stock.quantity }})
+            (Price: {{ stock.price | currency }} | Quantity:
+            {{ stock.quantity }})
           </small>
         </h3>
       </div>
@@ -16,15 +17,16 @@
             class="form-control"
             placeholder="Quantity"
             v-model="quantity"
+            :class="{ danger: insufficientQuantity }"
           />
         </div>
         <div class="float-right">
           <button
             class="btn btn-success"
             @click="sellStock"
-            :disabled="quantity <= 0"
+            :disabled="insufficientQuantity || quantity <= 0"
           >
-            Sell
+            {{ insufficientQuantity ? 'Not enough' : 'Sell' }}
           </button>
         </div>
       </div>
@@ -41,6 +43,11 @@ export default {
     return {
       quantity: 0
     };
+  },
+  computed: {
+    insufficientQuantity() {
+      return this.quantity > this.stock.quantity;
+    }
   },
   methods: {
     ...mapActions({
@@ -59,4 +66,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.danger {
+  border: 1px solid red;
+}
+</style>
