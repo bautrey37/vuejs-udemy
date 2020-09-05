@@ -28,6 +28,8 @@ Use Vue Developer Tools: https://github.com/vuejs/vue-devtools for better debugg
 
 ![portfolio](Projects/docs/stock_trader_portfolio.png)
 
+Deployed at: hhttps://stock-trader-brandon.surge.sh/
+
 ## Sections
 
 ### Section 1: Getting Started
@@ -131,6 +133,27 @@ vue-router Documentation: https://router.vuejs.org/en/
 Vuex Github Page: https://github.com/vuejs/vuex
 
 Vuex Documenation: https://vuex.vuejs.org/en/
+
+### Section 19: Deployment
+
+Tutorial uses AWS S3. However, I think surge.sh is easier.
+
+Run:
+
+- `npm run build`
+- `npm install -g surge`
+- `cd dist`
+- `surge`
+
+Then, you should have a URL to access your site.
+
+OR:
+
+Run: `npm run deploy`, which has a script to deploy to the URL that I want.
+
+Go to https://stock-trader-brandon.surge.sh/ to see Project 3.
+
+Vue Deployment: https://cli.vuejs.org/guide/deployment.html
 
 ### Section 22: Using Axios
 
