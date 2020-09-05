@@ -17,7 +17,6 @@ export default {
   },
   computed: {
     stocks() {
-      console.log(this.$store.getters.stocks);
       return this.$store.getters.stocks;
     }
   }

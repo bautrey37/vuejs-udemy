@@ -6,7 +6,6 @@ const state = {
 
 const mutations = {
   SET_STOCKS(state, stocks) {
-    console.log('setting stocks', stocks);
     state.stocks = stocks;
   },
   RND_STOCKS(state) {
@@ -20,7 +19,6 @@ const actions = {
     commit();
   },
   initStocks: ({ commit }) => {
-    console.log('init stocks');
     commit('SET_STOCKS', stocks);
   },
   randomizeStocks: ({ commit }) => {
@@ -30,7 +28,6 @@ const actions = {
 
 const getters = {
   stocks: state => {
-    console.log('getting stocks', state.stocks);
     return state.stocks;
   }
 };
