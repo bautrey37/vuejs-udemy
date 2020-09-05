@@ -20,6 +20,14 @@ Covers sections 5 - 9
 
 ### Stock Trader
 
+Covers sections 11 - 17.
+
+Use Vue Developer Tools: https://github.com/vuejs/vue-devtools for better debugging.
+
+![stocks](Projects/docs/stock_trader_stocks.png)
+
+![portfolio](Projects/docs/stock_trader_portfolio.png)
+
 ## Sections
 
 ### Section 1: Getting Started
