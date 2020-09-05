@@ -17,6 +17,7 @@
           />
         </div>
         <div class="float-right">
+          <!-- Does not disable on non-integers; !Number.isInteger(quantity)  because type is not number-->
           <button
             class="btn btn-success"
             @click="buyStock"
@@ -45,7 +46,7 @@ export default {
         stockPrice: this.stock.price,
         quantity: this.quantity
       };
-      console.log(order);
+      this.$store.dispatch('buyStock', order);
       this.quantity = 0;
     },
     disableButton() {}
